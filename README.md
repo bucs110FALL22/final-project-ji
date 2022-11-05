@@ -5,18 +5,18 @@
 ### << Semester, Year >>
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit?usp=sharing)
 
-<< [repl](#) >>
+<< [repl](#) >> https://replit.com/join/jnzvgnaepz-horrify
 
 << [link to demo presentation slides](#) >>
 
-### Team: << team name >>
-#### << Team Members >>
+### Team: ji
+#### Danielle Gray, Jared Chan
 
 ***
 
 ## Project Description
 
-<< Give an overview of your project >>
+Simple pacman styled game
 
 ***    
 
