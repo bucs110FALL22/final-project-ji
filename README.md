@@ -32,7 +32,7 @@ Simple pacman styled game
 ***        
 
 ## Program Design
-
+A simple pacman game utilizing pygame.
 * Non-Standard libraries
     * << You should have a list of any additional libraries or modules used (pygame, request) beyond non-standard python. 
          For each additional module you should include

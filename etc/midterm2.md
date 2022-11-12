@@ -22,9 +22,9 @@ class Pacman
     reset()
     move_right()
     move_left()
-    add_health()
-    loose_health()
-    use_food()
+    move_down()
+    move_up()
+    
    
 
 ## Class Interface 2
@@ -37,6 +37,8 @@ class Ghost
   methods: 
     move_right()
     move_left()
+    move_down()
+    move_up()
     
 
 ## Class Interface 3
