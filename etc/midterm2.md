@@ -10,8 +10,8 @@ milestone 2 template
 Come up with interfaces for 3 possible classes you think you may need for your project. Again, brainstorm a little. Nothing is *wrong*.
 
 ## Class Interface 1
-class Pacman
-  def Pacman()
+class treat
+  def treat()
     self.lives = 3
     self.health = 15
     self.block = False
@@ -28,8 +28,8 @@ class Pacman
    
 
 ## Class Interface 2
-class Ghost
-    def Ghost()
+class Dog
+    def Dog()
     self.health = 10
     self.speed = 4
     self.width = 2
@@ -42,8 +42,8 @@ class Ghost
     
 
 ## Class Interface 3
-class Food
-    def Food()
+class Ball
+    def Ball()
     self.replenish = 5
     self.move
   methods:

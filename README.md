@@ -2,10 +2,10 @@
 # CS110 Project Proposal
 # << Project Title >>
 ## CS 110 Final Project
-### << Semester, Year >>
+### F
 ### [Assignment Description](https://docs.google.com/document/d/1H4R6yLL7som1lglyXWZ04RvTp_RvRFCCBn6sqv-82ps/edit?usp=sharing)
 
-<< [repl](#) >> https://replit.com/join/jnzvgnaepz-horrify
+https://replit.com/join/jnzvgnaepz-horrify
 
 << [link to demo presentation slides](#) >>
 
@@ -16,7 +16,7 @@
 
 ## Project Description
 
-Simple pacman styled game
+Our goal was to create a game based off the arcade game Snake, but instead, you are playing as a dog treat while trying to eat a dodge bouncing dogs as obstacles, with the dogs moving faster and multiplying overtime. Try to get the highest score as possible.
 
 ***    
 
@@ -70,6 +70,6 @@ The Project is broken down into the following file structure:
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | click count button   | display changes to count = 1      |
-etc...
+|  1                   | Open terminal, enter 'python3 main.py' // Run Counter Program  |GUI window appears with count = 0  |
+|  2                   | Click play button   | display changes to count = 1      |
+|  3                   | Use arrow keys to move away from the dog | If dog comes in contact with treat, game is over - prints "GAME OVER", if not the game continues   |
