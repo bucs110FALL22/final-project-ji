@@ -7,7 +7,7 @@
 
 https://replit.com/join/jnzvgnaepz-horrify
 
-<< [link to demo presentation slides](#) >>
+https://docs.google.com/presentation/d/1s4SJGUp03pBpi-xLsY1T6WCk-SG05SoBTsgxCXb9z4w/edit#slide=id.p
 
 ### Team: ji
 #### Danielle Gray, Jared Chan
@@ -23,26 +23,37 @@ Our goal was to create a game based off the arcade game Snake, but instead, you 
 ## User Interface Design
 
 - **Initial Concept**
-  - << A wireframe or drawing of the user interface concept along with a short description of the interface. You should have one for each screen in your program. For example, if your program has a start screen, game screen, and game over screen, you should include a wireframe / screenshot / drawing of each one and a short description of the components. >>
+  Menu Screen: A menu screen with a Play! button
+  GUI Screen: A nintendogs background with dogs bouncing and you playing as the treat
+--------------------------------------------------------------------------
+  **bugs**: sometimes the ball/dog spawns outside the barriers
+            images have boxes around them
     
     
 - **Final GUI**
-  - << You should also have a screenshot of each screen for your final GUI >>
+  - GUI IN-GAME:  https://gyazo.com/21c85ce730cedc17d83cfcac2b2e9387
+  - MENU: https://gyazo.com/423b5fc0fe85724b714f55c46050685e
 
 ***        
 
 ## Program Design
-A simple pacman game utilizing pygame.
+Our goal was to create a game based off the arcade game Snake, but instead, you are playing as a dog treat while trying to eat a dodge bouncing dogs as obstacles, with the dogs moving faster and multiplying overtime. Try to get the highest score as possible.
 * Non-Standard libraries
-    * << You should have a list of any additional libraries or modules used (pygame, request) beyond non-standard python. 
-         For each additional module you should include
-         - url for the module documentation
-         - a short description of the module >>
+**Pygame**: https://www.pygame.org/docs/ Set of Python modules designed for writing video games
+**Math**: https://docs.python.org/3/library/math.html This module provides access to the mathematical functions defined by the C standard.
+**Json**: https://docs.python.org/3/library/json.html: A lightweight data interchange format inspired by JavaScript object literal syntax
+**Random**: https://www.toppr.com/guides/python-guide/tutorials/modules/modules/random/use-random-module-to-generate-random-numbers-in-python/#:~:text=Q1.-,What%20is%20import%20random%20in%20Python%3F,random%20number%20generation%2Drelated%20functions. Defines a series of functions for generating or manipulating random integers.
+
+
 * Class Interface Design
     * << A simple drawing that shows the class relationships in your code (see below for an example). This does not need to be overly detailed, but should show how your code fits into the Model/View/Controller paradigm. >>
         * ![class diagram](assets/class_diagram.jpg) 
 * Classes
-    * << You should have a list of each of your classes with a description. >>
+    Ball: defines the ball boundaries and creates ball
+    Box: Draws the screen and addds the background
+    Controller: defines text colors, movement of the treat, boundaries of the dog, controls the game itself.
+    Pepsi: "Pepsi" class, or the dogs you will have to avoid in the game
+    Treat: Creates the treat, what you will be 
 
 ## Project Structure and File List
 
@@ -50,26 +61,42 @@ The Project is broken down into the following file structure:
 
 * main.py
 * src
-    * << all of your python files should go here >>
+    ball.py
+    Box.py
+    button.py
+    controller.py
+    dog.py
+    highscore.py
+    screen.py
+    treat.py
 * assets
-    * << all of your media, i.e. images, font files, etc, should go here) >>
+    ball.png
+    dog.png
+    dogTreat.jpg
+    gui.jpg
+    highscore.json
+    treat.jpg
 * etc
-    * << This is a catch all folder for things that are not part of your project, but you want to keep with your project >>
+    midterm2.md
 
 ***
 
 ## Tasks and Responsibilities 
 
-   * Outline the team member roles and who was responsible for each class/method, both individual and collaborative.
+   Danielle and Jared - ball.py
+   Jared and Danielle- controller.py
+   Jared - highscore.py
+   Jared - treat.py
+   Danielle - dog.py
+   
 
 ## Testing
-
-* << Describe your testing strategy for your project. >>
+We coded each class bit by bit and tested each method individually.
 
 ## ATP
 
 | Step                 |Procedure             |Expected Results                   |
 |----------------------|:--------------------:|----------------------------------:|
-|  1                   | Open terminal, enter 'python3 main.py' // Run Counter Program  |GUI window appears with count = 0  |
-|  2                   | Click play button   | display changes to count = 1      |
-|  3                   | Use arrow keys to move away from the dog | If dog comes in contact with treat, game is over - prints "GAME OVER", if not the game continues   |
+|  1                   | Open terminal, enter 'python3 main.py' // Run Counter Program  |GUI window appears with High Score = 10 (current high score), move treat to dodge dog, and eat ball; "Click to Play" button on the screen.  |
+|  2                   | Click play button   | Display changes to the 2nd GUI screen, with dogs bouncing off the screen and a tennis ball for you to eat.      |
+|  3                   | Use the WASD keys to move away from the dog | If dog comes in contact with treat(you), game is over - goes back to the starting menu; if not the game continues. If you continue to eat the tennis ball, your score will increase, and if you beat the high score, your score, or the new high score, will be listed on the menu.    |

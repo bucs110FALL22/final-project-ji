@@ -2,17 +2,17 @@ import json
 import pygame
 
 #x: Start
-
-def __init__(self): 
-  self.score = json.loads(open("assets/highscore.json").read()) #for strings
-
-def verifyscore(self, score):
-  self.score = sorted(self.score)
-  if sorted[0] > score:
-    self.add_score(score)
-  self.score[:3]
-
-def add_score(self): 
-  fref = open("assets/highscore.json", w)
-  json.dump(fref, self.score)
-  fref.close()
+def initialhighscores():
+  
+  try:
+      with open('highscore.txt', 'r') as f:
+          highscores = json.load(f)
+  except FileNotFoundError:
+      # If the file doesn't exist, use your default values
+      highscores = 0
+  return highscores
+  
+def newhighscore(score,highscores):
+  if highscores > score:
+    with open('highscore.txt', 'w') as f:
+      json.dump(highscores, f)
